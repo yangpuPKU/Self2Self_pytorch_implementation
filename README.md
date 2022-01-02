@@ -6,10 +6,6 @@ This is a pytorch implementation of [self2self](https://openaccess.thecvf.com/co
 It is a pytorch reimplementation of the [tensorflow version](https://github.com/scut-mingqinchen/self2self)
 
 You can simply run main.py with the default parameters:
-```python
-python main.py
-```
-or also run 
 ```
 sh main.sh
 ```
