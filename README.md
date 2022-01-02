@@ -11,6 +11,10 @@ sh main.sh
 ```
 The denoised images will be saved in images/, and the logs will be saved in logs/.
 
+## Compare the performance of tensorflow and pytorch
+
+![image](https://github.com/yangpuPKU/Self2Self_pytorch_implementation/blob/main/Comparison.png)
+
 ## Details of reimplementation
 
 There are some notable details in the conversion of tensorflow to pytorch, which will significantly effect the performance. 
