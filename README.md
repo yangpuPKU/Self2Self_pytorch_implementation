@@ -24,7 +24,7 @@ The implementation details of Adam between tensorflow and pytorch have slight di
 ## Update Log
 
 ### 2023-05-14 
-- Found and fixed a bug in line 144 of file "network/pconv.py"
+- Found and fixed a bug in line 144 of file "network/pconv.py", which enables our implementation to achieve comparable denosing performance with the tensorflow version. 
 - Found that changing the optimizer from Adam to AdamW achieves better denosing performance. (We still keep the Adam optimizer, in order to keep up with the original tensorflow version of the implementation)
 
 Thanks to @haimiaozh for all the contributions to improving this project! 
