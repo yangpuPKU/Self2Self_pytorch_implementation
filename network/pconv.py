@@ -141,7 +141,7 @@ class PConv2d(nn.Module):
 
             output *= mask_ratio  # Multiply by the sum(1)/sum(mask) ratios
             output += self.bias  # Add the bias *after* mask_ratio, not before !
-            output *= update_mask  # Nullify pixels outside the valid mask
+            # output *= update_mask  # Nullify pixels outside the valid mask
         else:
             output *= mask_ratio
 
