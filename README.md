@@ -11,12 +11,6 @@ sh main.sh
 ```
 The denoised images will be saved in images/, and the logs will be saved in logs/.
 
-## Compare the performance of tensorflow and pytorch
-
-![image](https://github.com/yangpuPKU/Self2Self_pytorch_implementation/blob/main/Comparison.png)
-
-Our reimplementation has a slight gap compared with the tensorflow version. 
-
 ## Details of reimplementation
 
 There are some notable details in the conversion of tensorflow to pytorch, which will significantly effect the performance. 
@@ -26,3 +20,11 @@ Pytorch has a package of the implementation of [Pconv2d](https://github.com/Desi
 
 ### Optimizer
 The implementation details of Adam between tensorflow and pytorch have slight difference. However, it is widely discussed the suboptimal convergence in PyTorch compared to TensorFlow when using Adam optimizer. 
+
+## Update Log
+
+### 2023-05-14 
+- Found and fixed a bug in line 144 of file "network/pconv.py"
+- Found that changing the optimizer from Adam to AdamW achieves better denosing performance. (We still keep the Adam optimizer, in order to keep up with the original tensorflow version of the implementation)
+
+Thanks to @haimiaozh for all the contributions to improving this project! 
